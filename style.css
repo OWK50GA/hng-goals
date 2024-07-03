@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Sorta Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191d28;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Sorta Global Syles Ends */
+
+/* Header and NavBar */
+header, footer {
+    background-color: #030617;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+    padding: 1rem 1rem;
+    color: white;
+    list-style: none;
+}
+
+.title {
+    margin-left: 5rem;
+    color: yellow;
+}
+
+.nav-list {
+    width: 40%;
+    justify-content: flex-end;
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    padding: 0 1rem;
+}
+
+.nav-list li a:hover {
+    background-color: yellow;
+    color: #030617;
+}
+
+.nav-list .menu {
+    display: none;
+}
+
+/* Header and NavBar Ends */
+
+/* Main Begins */
+
+    /* Section 1 of Main - (Home, if you will) */
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+div.sect-0 {
+    width: 80%;
+    margin: 2% auto;
+    /* display: flex; */
+}
+
+div.sect-0 p {
+    margin: 0.5rem auto;
+}
+
+div.sect-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10% auto;
+    width: 80%;
+    gap: 10%;
+}
+
+div.sect-1-left {
+    margin-top: -3rem;
+}
+
+div.sect-1-left .welcome {
+    margin: 3rem auto;
+}
+
+div.sect-1-left div .name {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 1.2rem auto;
+}
+
+div.sect-1-left div .connect-btn {
+    background-color: yellow;
+    padding: 0.8rem;
+    margin: 1.2rem auto;
+    border: none;
+    border-radius: 5px;
+}
+
+    /* Section 1 of Main ends */
+
+    /* Section 2 of Main - About, if you will */
+
+div.sect-2 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 5rem;
+    /* align-items: center; */
+}
+
+div.sect-2-left {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+div.sect-2-right .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100%;
+}
+
+.skills {
+    margin: 2rem auto;
+}
+
+div.sect-3 {
+    display: flex;
+    margin: 6% auto;
+    justify-content: space-between;
+    width: 80%;
+}
+
+div.sect-3-left {
+    width: 50%;
+}
+
+div.sect-3-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+div.sect-4 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5rem;
+}
+
+
+div.sect-4 div.required-links {
+    width: 50%;
+}
+
+div.sect-4 div.required-links ul {
+    margin: 1rem auto;
+    list-style: none;
+    color: #007bff;
+}
+
+div.sect-4 div.required-links ul li:hover {
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+}
+
+.link {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+}
+
+footer {
+    /* width: 90%; */
+    margin: 4% auto 0 auto;
+    padding: 2rem;
+}
+
+div.contact-info {
+    width: 80%;
+    margin: auto;
+}
+
+div.contact-info-list ul {
+    list-style: none;
+    margin: 0.75rem auto;
+}
+
+.contact-icon {
+    color: white;
+}
+
+.contact-info-list ul li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.5rem auto;
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-list {
+        font-size: 14px;
+    }
+
+    .nav-list li {
+        padding: 0 0.5rem;
+    }
+
+    div.sect-1 {
+        flex-direction: column;
+    }
+
+    div.sect-1-left {
+        margin: 0;
+    }
+
+    div.sect-1-right {
+        margin: 2rem auto;
+    }
+
+    div.sect-1-left .welcome {
+        margin: 2rem auto;
+    }
+
+    div.sect-2 {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    div.sect-2-left {
+        margin-bottom: 3%;
+    }
+
+    div.sect-2-right .technologies {
+        gap: 2rem;
+        margin: -2% auto 0 auto;
+        width: 40%;
+    }
+    
+    div.sect-3 {
+        flex-direction: column-reverse;
+    }
+
+    div.sect-3-left {
+        width: 100%;
+    }
+
+    div.sect-3-right {
+        flex-direction: row;
+        margin: 3rem auto;
+    }
+}
+
+@media (max-width: 500px) {
+    div.navbar div.title {
+        margin-left: 0;
+    }
+
+    .nav-list li:not(.menu) {
+        display: none;
+    }
+
+    .nav-list .menu {
+        display: block;
+        /* position: initial; */
+    }
+
+    .nav-list.responsive {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        align-items: flex-end;
+        width: fit-content;
+    }
+
+    .nav-list.responsive li {
+        display: block;
+        list-style: none;
+        margin-bottom: 1rem;
+        width: fit-content;
+    }
+
+    .nav-list.responsive li a {
+        /* display: block; */
+        text-align: right;
+    }
+
+    .nav-list.responsive li a:hover {
+        background-color: yellow;
+        /* width: fit-content; */
+        color: #030617;
+    }
+    
+
+    div.sect-1 {
+        width: 100%;
+    }
+
+    div.sect-1-left {
+        width: 90%;
+    }
+
+    div.sect-2 {
+        width: 100%;
+    }
+
+    div.sect-2-right .technologies {
+        width: 85%;
+    }
+
+    div.sect-3 {
+        width: 100%;
+    }
+
+    div.sect-3-left {
+        width: 90%;
+        margin: auto;
+    }
+
+    div.sect-3-right {
+        flex-direction: column;
+    }
+
+    div.sect-4 {
+        flex-direction: column;
+        margin-top: 3rem;
+        gap: 2rem;
+    }
+
+    div.sect-4 div.required-links {
+        width: 100%;
+    }    
+}

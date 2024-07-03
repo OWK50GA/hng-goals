@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Personal Website</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="title">AboutMe</div>
+            <ul class="nav-list">
+                    <li class="menu"><a href="javascript:void(0);">☰</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#goals">GOALS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="sect-0">
+            <p data-testid="currentDay"></p>
+            <p data-testid="currentTimeUTC"></p>
+        </div>
+        <div class="sect-1" id="home">
+            <div class="sect-1-left">
+                <p class="welcome">Hello, Welcome</p>
+                <div>
+                    <p class="name">I'm <span data-testid="slackDisplayName">Wilfrid Okorie</span></p>
+                    <p>
+                        This version of my personal website will
+                        be used to highlight my personal goals in
+                        the ever-expanding realm of tech, as a 
+                        Front-end Web Developer. <br/>You can visit 
+                        other sections using the NavBar for details
+                    </p>
+                    <button class="connect-btn">
+                        <a href='mailto:wilfridokorie@gmail.com? &body=Hello, Wilfrid...'>
+                            Connect With Me
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="sect-1-right">
+                <div>
+                    <img src="./assets/300by300-variant.jpg" alt="" data-testid="slackProfilePicture">
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+            For Section 2, there was a change mid-coding,
+            so sect-2-right shows on the left of the html document,
+            while sect-2-left shows on the right of the html
+            document.
+        -->
+        <div class="sect-2" id="about">
+            <div class="sect-2-right">
+                <div class="technologies">
+                    <img src="./assets/icons8-html.svg" alt="">
+                    <img src="./assets/icons8-css.svg" alt="">
+                    <img src="./assets/icons8-javascript.svg" alt="">
+                    <img src="./assets/icons8-react-a-javascript-library-for-building-user-interfaces-48.png" alt="">
+                    <img src="./assets/icons8-tailwind-css.svg" alt="">
+                </div>
+            </div>
+            <div class="sect-2-left">
+                <h1>About Me</h1>
+                <div>
+                    <p>
+                        <br />
+                        Hi, I'm Wilfrid Okorie, a passionate
+                        Web Developer.
+                    </p>
+                    <p>
+                        <br />
+                        Programming in general is not just about solving
+                        problems in my opinion. It is also about knowing
+                        when to create a problem out of something for the
+                        sake of improvement.
+                    </p>
+                    <p>
+                        Therefore, I would call myself a problem solver, but
+                        as my philosophy dictates, I like to call myself a...
+                    </p>
+                    <p>
+                        <br />
+                        <strong>STATUS QUO IMPROVER</strong>
+                    </p>
+                </div>
+
+                <div class="skills">
+                    <h2>Skills:</h2>
+                    <p>
+                        I am skilled at build intuitive and responsive UIs 
+                        using HTML5, CSS3 and JavaScript (ES5+). 
+                    </p>
+                    <p>
+                        My main specialization is building intuitive and 
+                        responsive User Interface as well as commendable
+                        User Experience, using ReactJS, and its myriad of
+                        important libraries.
+                    </p>
+                    <p>
+                        <br />
+                        I am familiar with State Management, using 
+                        React Hooks, Component-driven architecture, Component 
+                        Lifecycle Methods, Integration with libraries such
+                        as React Router, Redux and Webpack.
+                        <br />
+                    </p>
+                    <p>
+                        <br/>
+                        I also implement optimization techniques to ensure 
+                        high-performance applications, leveraging tools such 
+                        as React.memo. I also write unit tests and integrate 
+                        tools like React DevTools to ensure robust and 
+                        error-free code.
+                        <br/>
+                    </p>
+                </div>
+                <div class="Certifications">
+                    <h2>Certifications:</h2>
+                    <li><a href="https://coursera.org/share/c86e56064476583052ab4bcbcef15592">React Basics by Meta</a></li>
+                    <li><a href="https://coursera.org/share/8bb4e4d7a1a200cbfb14ec6291d4943a">Advanced React by Meta</a></li>
+                </div>
+            </div>
+        </div>
+
+        <div class="sect-3" id="goals">
+            <div class="sect-3-left">
+                <h2>TECH GOALS</h2>
+                <p>
+                    <br>
+                    This version of my personal website is dedicated to
+                    highlighting my goals in the Tech World for the next 2
+                    years, so there's no need getting my projects on here.
+                </p>
+                <p>
+                    <br>
+                    Having been stuck making attempts to break into the
+                    tech space since 2021, while recording failures majorly
+                    due to lack of resources, I feel I have made a lot of progress
+                    this year and I'm very positive for the second-half.
+                </p>
+                <p>
+                    <br>
+                    I recorded a 'good-enough' in JavaScript at the beginning
+                    of the year since learning ends, and I've chosen React 
+                    as my preferred framework. Between January and now, I have
+                    made multiple projects, going from beginner to intermediate.
+                </p>
+                <p>
+                    <br>
+                    Right now, I believe I am ready for the next big step in my
+                    career. For the second-half of this year, apart from being
+                    the Mechatronics Engineering student I am, I intend focusing
+                    on finding a job in order to gain professional experience to
+                    increase my employability in the field.
+                    <br>That is where the HNG Internship comes in.
+                </p>
+                <p>
+                    <br>
+                    I came across an Internship opportunity online, known as the 
+                    HNG Internship - <a href="https://hng.tech/learn" data-testid="hngLink" class="link" target="_blank">Check it out</a>. Many know it as different things. A game, a
+                    russian roulette, between two rocks and 2 hard places, etc.
+                    <br>
+                    For me, it's an opportunity.
+                </p>
+                
+                <p>
+                    <br>
+                    Once I achieve a level of balance, which I anticipate in a year
+                    and a half by God's grace, I can work on my startup plans
+                </p>
+                <p>
+                    <br>
+                    So help me God
+                </p>
+            </div>
+            <div class="sect-3-right">
+                <img src="./assets/hng-tech.jpg" alt="" class="hng-logo">
+                <img src="./assets/150by150-rocket-removebg-preview.png" alt="">
+            </div>
+        </div>
+
+        <div class="sect-4" id="incentive">
+            <div>
+                <img src="./assets/gift-removebg-preview.png" alt="">
+            </div>
+            <div class="required-links">
+                <p>
+                    It couldn't have been an easy read so far, and for
+                    this feat of yours, I am proud of you.
+                    <br>
+                    For that, I present to you 2 useful websites to help you
+                    improve your web business:
+                </p>
+                <ul>
+                    <li><a href="https://keyword.dog" data-testid="keywordLink" class="link" target="_blank">
+                        AI-powered Keyword Research for SEO optimization
+                    </a></li>
+                    <li><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink" class="link" target="_blank">
+                        Website Scraper for Error Discovery, Broken Links and Slow Pages
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contact-info" id="contact">
+            <h3>Contact Information/Social Media:</h3>
+            <div class="contact-info-list">
+                <ul>
+                    <li>
+                        <img src="./assets/icons8-github-32.png" alt="" class="contact-icon">
+                        <a href="https://github.com/OWK50GA" class="link" target="_blank">
+                            Github - OWK50GA
+                        </a>
+                    </li>
+                    <li>
+                        <img src="./assets/icons8-linkedin-32.png" alt="">
+                        <a href="https://www.linkedin.com/in/wilfrid-okorie-072685232" class="link" target="_blank">
+                            LinkedIn - Wilfrid Okorie
+                        </a>
+                    </li>
+                    <li class="link">
+                        <img src="./assets/icons8-email-32.png" alt="" class="contact-icon">
+                        <p>
+                            Email - <a data-testid="slackEmail" href="mailto:wilfridokorie@gmail.com">wilfridokorie@gmail.com</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div></div>
+    </footer>
+</body>
+</html>
